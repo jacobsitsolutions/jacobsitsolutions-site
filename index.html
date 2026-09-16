@@ -1257,6 +1257,15 @@
         <button class="submit-button" type="submit">
           Submit Support Request
         </button>
+        <div
+  id="form-status"
+  style="
+    display:none;
+    margin-top:15px;
+    font-size:13px;
+    text-align:center;
+  "
+></div>
 
       </form>
 
@@ -1280,6 +1289,67 @@
 
   </div>
 </footer>
+
+<script>
+  const supportForm = document.getElementById("support-form");
+  const formStatus = document.getElementById("form-status");
+  const submitButton = supportForm.querySelector(".submit-button");
+
+  supportForm.addEventListener("submit", async function(event) {
+    event.preventDefault();
+
+    const formData = new FormData(supportForm);
+
+    submitButton.disabled = true;
+    submitButton.textContent = "Submitting...";
+
+    formStatus.style.display = "block";
+    formStatus.style.color = "#637083";
+    formStatus.textContent = "Sending your request...";
+
+    try {
+      const response = await fetch(
+        supportForm.action,
+        {
+          method: supportForm.method,
+          body: formData,
+          headers: {
+            "Accept": "application/json"
+          }
+        }
+      );
+
+      if (response.ok) {
+        window.location.href = "thank-you.html";
+      } else {
+        const data = await response.json();
+
+        let errorMessage =
+          "There was a problem submitting your request. Please try again.";
+
+        if (data.errors) {
+          errorMessage = data.errors
+            .map(error => error.message)
+            .join(", ");
+        }
+
+        formStatus.style.color = "#b91c1c";
+        formStatus.textContent = errorMessage;
+
+        submitButton.disabled = false;
+        submitButton.textContent = "Submit Support Request";
+      }
+
+    } catch (error) {
+      formStatus.style.color = "#b91c1c";
+      formStatus.textContent =
+        "Unable to submit the request. Please check your connection and try again.";
+
+      submitButton.disabled = false;
+      submitButton.textContent = "Submit Support Request";
+    }
+  });
+</script>
 
 </body>
 </html>
