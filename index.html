@@ -205,6 +205,8 @@
       font-weight: 750;
       font-size: 15px;
       transition: .2s ease;
+      border: 0;
+      cursor: pointer;
     }
 
     .primary {
@@ -553,43 +555,126 @@
       color: #bac8d8;
     }
 
-    .contact {
+    /* SUPPORT FORM */
+
+    .support-section {
       background: var(--soft);
     }
 
-    .contact-card {
-      max-width: 1000px;
-      margin: 0 auto;
-      border-radius: 25px;
-      padding: 56px;
-      background:
-        radial-gradient(circle at 85% 0%, rgba(22,119,255,.30), transparent 36%),
-        linear-gradient(130deg, #07111f, #112d4f);
-      color: white;
-      display: flex;
-      justify-content: space-between;
-      gap: 40px;
-      align-items: center;
-      box-shadow: 0 25px 60px rgba(7,17,31,.18);
+    .support-grid {
+      display: grid;
+      grid-template-columns: .75fr 1.25fr;
+      gap: 55px;
+      align-items: start;
     }
 
-    .contact-card h2 {
+    .support-info {
+      padding-top: 10px;
+    }
+
+    .support-info h2 {
       font-size: clamp(2rem, 4vw, 3rem);
       line-height: 1.1;
-      margin-bottom: 14px;
+      letter-spacing: -1.4px;
+      margin-bottom: 18px;
     }
 
-    .contact-card p {
-      color: #b9c9da;
-      max-width: 620px;
+    .support-info p {
+      color: var(--muted);
+      margin-bottom: 25px;
     }
 
-    .contact-email {
-      margin-top: 18px;
-      display: inline-block;
-      color: #7db9ff;
-      font-weight: 800;
+    .support-contact {
+      margin-top: 22px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .support-contact a {
+      color: var(--blue);
+      font-weight: 700;
       text-decoration: none;
+    }
+
+    .support-form {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 34px;
+      box-shadow: var(--shadow);
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    .form-group {
+      margin-bottom: 18px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 13px;
+      font-weight: 750;
+      margin-bottom: 7px;
+      color: #26364a;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      border: 1px solid #d6dee8;
+      border-radius: 10px;
+      background: white;
+      color: #142033;
+      font: inherit;
+      font-size: 14px;
+      padding: 12px 13px;
+      outline: none;
+      transition: .2s ease;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--blue);
+      box-shadow: 0 0 0 3px rgba(22,119,255,.10);
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 150px;
+    }
+
+    .form-note {
+      font-size: 12px;
+      color: #778395;
+      margin: 2px 0 18px;
+      padding: 12px 14px;
+      background: #f7f9fc;
+      border-radius: 9px;
+      border-left: 3px solid var(--blue);
+    }
+
+    .submit-button {
+      width: 100%;
+      min-height: 52px;
+      background: var(--blue);
+      color: white;
+      border: 0;
+      border-radius: 10px;
+      font-size: 15px;
+      font-weight: 800;
+      cursor: pointer;
+      transition: .2s ease;
+    }
+
+    .submit-button:hover {
+      background: #0869e9;
+      transform: translateY(-1px);
     }
 
     footer {
@@ -625,7 +710,8 @@
     @media (max-width: 950px) {
       .hero-grid,
       .difference-grid,
-      .about-grid {
+      .about-grid,
+      .support-grid {
         grid-template-columns: 1fr;
       }
 
@@ -667,7 +753,8 @@
         letter-spacing: -2px;
       }
 
-      .service-grid {
+      .service-grid,
+      .form-row {
         grid-template-columns: 1fr;
       }
 
@@ -676,18 +763,16 @@
         gap: 8px;
       }
 
-      .contact-card {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 38px 28px;
-      }
-
       section {
         padding: 75px 0;
       }
 
       .footer-right {
         text-align: left;
+      }
+
+      .support-form {
+        padding: 25px 20px;
       }
     }
   </style>
@@ -706,10 +791,8 @@
       <a href="#services">Services</a>
       <a href="#pricing">Pricing</a>
       <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-      <a class="nav-cta" href="mailto:tim@jacobsitsolutions.com?subject=IT Support Request">
-        Request Support
-      </a>
+      <a href="#support">Contact</a>
+      <a class="nav-cta" href="#support">Request Support</a>
     </nav>
 
   </div>
@@ -738,13 +821,8 @@
         </p>
 
         <div class="hero-actions">
-          <a class="button primary" href="mailto:tim@jacobsitsolutions.com?subject=IT Support Request">
-            Get IT Help
-          </a>
-
-          <a class="button secondary" href="#services">
-            Explore Services
-          </a>
+          <a class="button primary" href="#support">Get IT Help</a>
+          <a class="button secondary" href="#services">Explore Services</a>
         </div>
 
         <div class="hero-tags">
@@ -907,9 +985,7 @@
 
       <div class="center-head">
         <div class="section-label">Popular Services</div>
-
         <h2>Straightforward starting prices.</h2>
-
         <p>
           Common remote services can often be handled as individual,
           fixed-scope tasks.
@@ -921,9 +997,7 @@
         <div class="price-row">
           <div>
             <div class="price-name">Remote IT Troubleshooting</div>
-            <div class="price-detail">
-              Windows, software, configuration, and general technical issues
-            </div>
+            <div class="price-detail">Windows, software, configuration, and general technical issues</div>
           </div>
           <div class="price">From $59</div>
         </div>
@@ -931,9 +1005,7 @@
         <div class="price-row">
           <div>
             <div class="price-name">Microsoft 365 Support</div>
-            <div class="price-detail">
-              Email, licensing, accounts, MFA, Exchange, and configuration
-            </div>
+            <div class="price-detail">Email, licensing, accounts, MFA, Exchange, and configuration</div>
           </div>
           <div class="price">From $59</div>
         </div>
@@ -941,9 +1013,7 @@
         <div class="price-row">
           <div>
             <div class="price-name">User Setup / Offboarding</div>
-            <div class="price-detail">
-              Business account creation, access changes, and employee offboarding
-            </div>
+            <div class="price-detail">Business account creation, access changes, and employee offboarding</div>
           </div>
           <div class="price">From $49</div>
         </div>
@@ -951,9 +1021,7 @@
         <div class="price-row">
           <div>
             <div class="price-name">Active Directory / Entra ID Support</div>
-            <div class="price-detail">
-              Authentication, permissions, groups, identity, and policy troubleshooting
-            </div>
+            <div class="price-detail">Authentication, permissions, groups, identity, and policy troubleshooting</div>
           </div>
           <div class="price">From $99</div>
         </div>
@@ -961,9 +1029,7 @@
         <div class="price-row">
           <div>
             <div class="price-name">Windows Server Support</div>
-            <div class="price-detail">
-              Server troubleshooting, configuration, services, and administration
-            </div>
+            <div class="price-detail">Server troubleshooting, configuration, services, and administration</div>
           </div>
           <div class="price">From $125</div>
         </div>
@@ -971,9 +1037,7 @@
         <div class="price-row">
           <div>
             <div class="price-name">PowerShell Automation</div>
-            <div class="price-detail">
-              Custom scripts and repetitive workflow automation
-            </div>
+            <div class="price-detail">Custom scripts and repetitive workflow automation</div>
           </div>
           <div class="price">From $99</div>
         </div>
@@ -1004,28 +1068,19 @@
         <div class="step">
           <div class="step-num">STEP 01</div>
           <h3>Tell us what you need.</h3>
-          <p>
-            Send a description of the problem, project, or technical task that
-            needs to be completed.
-          </p>
+          <p>Submit the support request form with a description of your issue or project.</p>
         </div>
 
         <div class="step">
           <div class="step-num">STEP 02</div>
           <h3>Review the scope.</h3>
-          <p>
-            We'll determine whether the request can be handled remotely and
-            confirm the expected scope and pricing.
-          </p>
+          <p>We'll review the request and confirm whether it can be handled remotely, along with expected pricing.</p>
         </div>
 
         <div class="step">
           <div class="step-num">STEP 03</div>
           <h3>Get it resolved.</h3>
-          <p>
-            Remote access or administrative information is securely coordinated
-            and the requested work is completed.
-          </p>
+          <p>Remote access is securely coordinated when necessary and the requested work is completed.</p>
         </div>
 
       </div>
@@ -1070,32 +1125,139 @@
     </div>
   </section>
 
-  <section id="contact" class="contact">
-    <div class="container">
+  <!-- SUPPORT REQUEST FORM -->
 
-      <div class="contact-card">
+  <section id="support" class="support-section">
+    <div class="container support-grid">
 
-        <div>
-          <h2>Have an IT problem?</h2>
+      <div class="support-info">
+        <div class="section-label">Request Support</div>
 
-          <p>
-            Send a description of what you need help with. We'll review the
-            request and determine the best path forward.
-          </p>
+        <h2>Tell us what you need help with.</h2>
 
-          <a class="contact-email" href="mailto:tim@jacobsitsolutions.com">
+        <p>
+          Complete the form and provide as much information as possible.
+          Your request will be reviewed and we'll follow up regarding scope,
+          pricing, and next steps.
+        </p>
+
+        <div class="support-contact">
+          Prefer email?<br>
+          <a href="mailto:tim@jacobsitsolutions.com">
             tim@jacobsitsolutions.com
           </a>
         </div>
-
-        <a
-          class="button primary"
-          href="mailto:tim@jacobsitsolutions.com?subject=Jacobs IT Solutions - Service Request&body=Please describe the issue or service you need:%0D%0A%0D%0ACompany:%0D%0AName:%0D%0APhone:%0D%0AService needed:%0D%0A"
-        >
-          Request Support
-        </a>
-
       </div>
+
+      <form
+        class="support-form"
+        action="https://formspree.io/f/xeaojbye"
+        method="POST"
+      >
+
+        <input type="hidden" name="_subject" value="New Jacobs IT Solutions Support Request">
+
+        <div class="form-row">
+
+          <div class="form-group">
+            <label for="name">Name *</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              autocomplete="name"
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="company">Company</label>
+            <input
+              type="text"
+              id="company"
+              name="company"
+              autocomplete="organization"
+            >
+          </div>
+
+        </div>
+
+        <div class="form-row">
+
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              autocomplete="email"
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              autocomplete="tel"
+            >
+          </div>
+
+        </div>
+
+        <div class="form-row">
+
+          <div class="form-group">
+            <label for="service">Service Needed *</label>
+            <select id="service" name="service" required>
+              <option value="">Select a service</option>
+              <option>Remote IT Support</option>
+              <option>Microsoft 365 Support</option>
+              <option>Windows Server Support</option>
+              <option>Active Directory / Entra ID</option>
+              <option>User Setup / Offboarding</option>
+              <option>PowerShell Automation</option>
+              <option>Email / MFA Support</option>
+              <option>Other / Not Sure</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="priority">Priority *</label>
+            <select id="priority" name="priority" required>
+              <option value="">Select priority</option>
+              <option>Normal - General request</option>
+              <option>High - Work is significantly impacted</option>
+              <option>Urgent - Business operations are stopped</option>
+            </select>
+          </div>
+
+        </div>
+
+        <div class="form-group">
+          <label for="message">Describe the issue or request *</label>
+
+          <textarea
+            id="message"
+            name="message"
+            required
+            placeholder="Please describe what is happening, any error messages you are receiving, affected users or systems, and anything you have already tried."
+          ></textarea>
+        </div>
+
+        <div class="form-note">
+          For your security, do not include passwords, MFA codes, private keys,
+          credit card information, or other sensitive credentials in this form.
+          Secure access can be coordinated separately if needed.
+        </div>
+
+        <button class="submit-button" type="submit">
+          Submit Support Request
+        </button>
+
+      </form>
 
     </div>
   </section>
