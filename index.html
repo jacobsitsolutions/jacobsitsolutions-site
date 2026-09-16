@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jacobs IT Solutions</title>
+  <meta
+    name="description"
+    content="Remote IT support, Microsoft 365 administration, Windows Server support, Active Directory, Entra ID, and PowerShell automation for small businesses."
+  />
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #172033;
+      background: #ffffff;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #0f172a;
+      color: white;
+      padding: 18px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      font-size: 1.4rem;
+      font-weight: 700;
+    }
+
+    .brand span {
+      color: #2484ff;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 22px;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover {
+      color: #63a9ff;
+    }
+
+    .hero {
+      min-height: 68vh;
+      display: flex;
+      align-items: center;
+      padding: 80px 7%;
+      background:
+        linear-gradient(135deg, rgba(15,23,42,.97), rgba(20,54,102,.95));
+      color: white;
+    }
+
+    .hero-content {
+      max-width: 800px;
+    }
+
+    .eyebrow {
+      color: #66adff;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      font-size: clamp(2.6rem, 6vw, 5rem);
+      line-height: 1.05;
+      margin-bottom: 24px;
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      max-width: 690px;
+      color: #dbe7f8;
+      margin-bottom: 32px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 14px 22px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .button-primary {
+      background: #1677ff;
+      color: white;
+    }
+
+    .button-secondary {
+      border: 1px solid #7eb7ff;
+      color: white;
+    }
+
+    section {
+      padding: 80px 7%;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .section-title h2 {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+    }
+
+    .section-title p {
+      color: #64748b;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      border: 1px solid #e2e8f0;
+      border-radius: 14px;
+      padding: 28px;
+      background: white;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #0f172a;
+    }
+
+    .card p {
+      color: #64748b;
+    }
+
+    .difference {
+      background: #f4f8fc;
+    }
+
+    .difference-box {
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .difference-box h2 {
+      font-size: 2.4rem;
+      margin-bottom: 18px;
+    }
+
+    .difference-box p {
+      color: #475569;
+      font-size: 1.1rem;
+    }
+
+    .pricing {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .pricing-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 18px 0;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    .pricing-row span:last-child {
+      font-weight: 700;
+      color: #1677ff;
+    }
+
+    .about {
+      background: #0f172a;
+      color: white;
+    }
+
+    .about-content {
+      max-width: 850px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .about p {
+      color: #d1d9e6;
+      margin-top: 16px;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact a {
+      color: #1677ff;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    footer {
+      background: #08101f;
+      color: #94a3b8;
+      text-align: center;
+      padding: 28px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 700px) {
+      nav {
+        width: 100%;
+      }
+
+      nav a {
+        margin-left: 0;
+        margin-right: 18px;
+      }
+
+      .pricing-row {
+        flex-direction: column;
+        gap: 4px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="brand">Jacobs <span>IT Solutions</span></div>
+
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <div class="eyebrow">Remote IT Support for Small Businesses</div>
+
+    <h1>Professional IT Support. Without the IT Department.</h1>
+
+    <p>
+      Remote technology support for businesses that need reliable help with
+      Microsoft 365, Windows, Windows Server, Active Directory, Entra ID,
+      email, security, and automation.
+    </p>
+
+    <div class="buttons">
+      <a class="button button-primary" href="mailto:tim@jacobsitsolutions.com">
+        Get IT Help
+      </a>
+
+      <a class="button button-secondary" href="#services">
+        View Services
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="section-title">
+    <h2>IT Services That Fit Your Business</h2>
+    <p>
+      Get the technical help you need without committing to a large managed
+      services contract or unnecessary onsite visits.
+    </p>
+  </div>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Remote IT Support</h3>
+      <p>
+        Windows troubleshooting, software issues, email problems, user support,
+        and remote technical assistance.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Microsoft 365</h3>
+      <p>
+        Microsoft 365 administration, Exchange, MFA, licensing, user accounts,
+        email troubleshooting, and security configuration.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Windows Server & Active Directory</h3>
+      <p>
+        Windows Server support, Active Directory, Group Policy, permissions,
+        authentication, and identity troubleshooting.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Automation</h3>
+      <p>
+        PowerShell scripting and workflow automation designed to eliminate
+        repetitive administrative tasks.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="difference">
+  <div class="difference-box">
+    <h2>No contracts. No unnecessary onsite visits.</h2>
+    <p>
+      Jacobs IT Solutions provides professional remote IT services without
+      requiring a traditional managed-services agreement. Choose the service
+      you need, get the problem solved, and pay for the work performed.
+    </p>
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="section-title">
+    <h2>Popular Services</h2>
+    <p>Simple starting prices for common remote IT tasks.</p>
+  </div>
+
+  <div class="pricing">
+    <div class="pricing-row">
+      <span>Remote IT Troubleshooting</span>
+      <span>Starting at $59</span>
+    </div>
+
+    <div class="pricing-row">
+      <span>Microsoft 365 Support</span>
+      <span>Starting at $59</span>
+    </div>
+
+    <div class="pricing-row">
+      <span>User Setup / Offboarding</span>
+      <span>Starting at $49</span>
+    </div>
+
+    <div class="pricing-row">
+      <span>Active Directory Support</span>
+      <span>Starting at $99</span>
+    </div>
+
+    <div class="pricing-row">
+      <span>Windows Server Support</span>
+      <span>Starting at $125</span>
+    </div>
+
+    <div class="pricing-row">
+      <span>PowerShell Automation</span>
+      <span>Starting at $99</span>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <div class="about-content">
+    <h2>Enterprise IT Experience. Small-Business Accessibility.</h2>
+
+    <p>
+      Jacobs IT Solutions brings years of professional systems administration
+      experience to organizations that need knowledgeable IT assistance without
+      maintaining a full internal IT department.
+    </p>
+
+    <p>
+      Services are designed primarily for remote delivery, allowing businesses
+      to receive professional technical support quickly and efficiently.
+    </p>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="section-title">
+    <h2>Need IT Help?</h2>
+    <p>
+      Tell us what you need help with and we'll determine the best way to get it
+      resolved.
+    </p>
+  </div>
+
+  <p><strong>Jacobs IT Solutions</strong></p>
+  <p>Pacolet, South Carolina</p>
+  <p>
+    <a href="mailto:tim@jacobsitsolutions.com">
+      tim@jacobsitsolutions.com
+    </a>
+  </p>
+</section>
+
+<footer>
+  © 2026 Jacobs IT Solutions. All rights reserved.
+</footer>
+
+</body>
+</html>
