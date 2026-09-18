@@ -775,6 +775,141 @@
         padding: 25px 20px;
       }
     }
+/* =========================
+   TECHNOLOGIES & PLATFORMS
+   ========================= */
+
+.technology-section {
+  background: #ffffff;
+}
+
+.technology-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 42px;
+}
+
+.technology-card {
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 26px 24px;
+  background: #ffffff;
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+
+.technology-card:hover {
+  transform: translateY(-5px);
+  border-color: #bdd8f8;
+  box-shadow: var(--shadow);
+}
+
+.technology-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--blue-soft);
+  color: var(--blue);
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: .4px;
+  margin-bottom: 18px;
+}
+
+.technology-card h3 {
+  font-size: 18px;
+  margin-bottom: 9px;
+}
+
+.technology-card p {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+
+/* =========================
+   A DIFFERENT APPROACH
+   ========================= */
+
+.difference {
+  background: #f7f9fc;
+}
+
+.difference-heading {
+  max-width: 760px;
+  margin-bottom: 42px;
+}
+
+.difference-heading h2 {
+  font-size: clamp(32px, 4vw, 46px);
+  line-height: 1.08;
+  margin: 10px 0 16px;
+}
+
+.difference-heading p {
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.difference-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.difference-card {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 30px;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.difference-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+}
+
+.difference-number {
+  color: var(--blue);
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  margin-bottom: 16px;
+}
+
+.difference-card h3 {
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+
+.difference-card p {
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+
+/* Responsive */
+
+@media (max-width: 950px) {
+  .technology-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 730px) {
+  .technology-grid,
+  .difference-grid {
+    grid-template-columns: 1fr;
+  }
+}
+    
   </style>
 </head>
 
@@ -789,6 +924,7 @@
 
     <nav>
       <a href="#services">Services</a>
+      <a href="#technologies">Technologies</a>
       <a href="#pricing">Pricing</a>
       <a href="#about">About</a>
       <a href="#support">Contact</a>
@@ -920,66 +1056,154 @@
     </div>
   </section>
 
-  <section class="difference">
-    <div class="container difference-grid">
+  <!-- TECHNOLOGIES & PLATFORMS -->
+<section id="technologies" class="technology-section">
+  <div class="container">
 
-      <div>
-        <div class="big-number">IT</div>
-        <div class="big-number-label">when you need it.</div>
+    <div class="section-heading">
+      <span class="eyebrow">TECHNOLOGIES & PLATFORMS</span>
+      <h2>Experience with the technology your business depends on.</h2>
+      <p>
+        From everyday Microsoft 365 administration to servers, identity,
+        virtualization and automation, Jacobs IT Solutions can help manage
+        and troubleshoot the systems behind your business.
+      </p>
+    </div>
+
+    <div class="technology-grid">
+
+      <div class="technology-card">
+        <div class="technology-icon">M365</div>
+        <h3>Microsoft 365</h3>
+        <p>
+          Exchange Online, user administration, licensing, shared mailboxes,
+          MFA, email troubleshooting and tenant configuration.
+        </p>
       </div>
 
-      <div>
-        <div class="section-label">A different approach</div>
-
-        <h2>Pay for solutions, not unnecessary overhead.</h2>
-
-        <p style="color: var(--muted);">
-          Jacobs IT Solutions is designed for businesses that need professional
-          technical expertise without hiring an internal administrator or
-          entering a large support contract.
+      <div class="technology-card">
+        <div class="technology-icon">AD</div>
+        <h3>Active Directory</h3>
+        <p>
+          Users, groups, permissions, Group Policy, authentication,
+          account troubleshooting and directory administration.
         </p>
+      </div>
 
-        <div class="benefit-list">
+      <div class="technology-card">
+        <div class="technology-icon">ID</div>
+        <h3>Microsoft Entra ID</h3>
+        <p>
+          Identity management, MFA, access troubleshooting, enterprise
+          applications, account administration and hybrid identity.
+        </p>
+      </div>
 
-          <div class="benefit">
-            <div class="benefit-check">✓</div>
-            <div>
-              <strong>Remote-first service</strong>
-              <p>
-                Many common business IT problems can be diagnosed and resolved
-                securely without an onsite visit.
-              </p>
-            </div>
-          </div>
+      <div class="technology-card">
+        <div class="technology-icon">WIN</div>
+        <h3>Windows Server</h3>
+        <p>
+          Server administration, Windows services, updates, permissions,
+          troubleshooting and infrastructure support.
+        </p>
+      </div>
 
-          <div class="benefit">
-            <div class="benefit-check">✓</div>
-            <div>
-              <strong>Clear task-based pricing</strong>
-              <p>
-                Common services have straightforward starting prices so you
-                know what to expect.
-              </p>
-            </div>
-          </div>
+      <div class="technology-card">
+        <div class="technology-icon">PS</div>
+        <h3>PowerShell</h3>
+        <p>
+          Scripting, repetitive task automation, reporting, account
+          management and custom workflow automation.
+        </p>
+      </div>
 
-          <div class="benefit">
-            <div class="benefit-check">✓</div>
-            <div>
-              <strong>No long-term contract required</strong>
-              <p>
-                Request individual services when you need them rather than
-                committing to an ongoing MSP agreement.
-              </p>
-            </div>
-          </div>
+      <div class="technology-card">
+        <div class="technology-icon">VM</div>
+        <h3>VMware</h3>
+        <p>
+          Virtual machine administration, vSphere, configuration,
+          troubleshooting and virtual infrastructure support.
+        </p>
+      </div>
 
-        </div>
+      <div class="technology-card">
+        <div class="technology-icon">DNS</div>
+        <h3>DNS & Domains</h3>
+        <p>
+          DNS records, domain configuration, email-related DNS,
+          troubleshooting and service connectivity.
+        </p>
+      </div>
+
+      <div class="technology-card">
+        <div class="technology-icon">SEC</div>
+        <h3>Security & Access</h3>
+        <p>
+          MFA, account security, permissions, access reviews, endpoint
+          troubleshooting and practical security configuration.
+        </p>
       </div>
 
     </div>
-  </section>
+  </div>
+</section>
 
+  <!-- A DIFFERENT APPROACH -->
+<section class="difference" id="approach">
+  <div class="container">
+
+    <div class="difference-heading">
+      <span class="eyebrow">A DIFFERENT APPROACH</span>
+      <h2>IT help without hiring an IT department.</h2>
+      <p>
+        Get experienced technical help when you need it—without adding a
+        full-time employee or committing to a traditional managed-services
+        contract.
+      </p>
+    </div>
+
+    <div class="difference-grid">
+
+      <div class="difference-card">
+        <div class="difference-number">01</div>
+        <h3>Pay for the work you need</h3>
+        <p>
+          Get help with an individual problem, recurring support or a larger
+          project without being forced into a long-term contract.
+        </p>
+      </div>
+
+      <div class="difference-card">
+        <div class="difference-number">02</div>
+        <h3>Work directly with your IT professional</h3>
+        <p>
+          No call-center handoffs or explaining the same problem to multiple
+          technicians. Work directly with the person solving the problem.
+        </p>
+      </div>
+
+      <div class="difference-card">
+        <div class="difference-number">03</div>
+        <h3>Remote-first keeps things simple</h3>
+        <p>
+          Many Microsoft 365, Windows, server, identity and administrative
+          issues can be diagnosed and resolved remotely.
+        </p>
+      </div>
+
+      <div class="difference-card">
+        <div class="difference-number">04</div>
+        <h3>Solutions that fit the business</h3>
+        <p>
+          The goal isn't to sell more technology. It's to solve the problem,
+          simplify the environment and leave things working better than before.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+  
   <section id="pricing">
     <div class="container">
 
