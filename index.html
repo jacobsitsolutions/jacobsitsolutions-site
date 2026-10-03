@@ -98,10 +98,20 @@
   display: block;
 }
 
-    nav {
+   nav {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 4px;
+
+  background: rgba(255, 255, 255, 0.045);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+
+  padding: 7px;
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
 }
 
 nav a {
@@ -124,11 +134,14 @@ nav a:hover {
 
     .nav-cta {
   background: linear-gradient(135deg, #1677ff, #258cff);
-  padding: 12px 20px !important;
-  margin-left: 10px;
+  padding: 11px 19px !important;
+  margin-left: 5px;
   border-radius: 9px;
   color: white !important;
-  box-shadow: 0 7px 20px rgba(22, 119, 255, 0.28);
+
+  box-shadow:
+    0 6px 18px rgba(22, 119, 255, 0.30),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
 }
 
 .nav-cta:hover {
