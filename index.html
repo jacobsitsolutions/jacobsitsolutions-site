@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Jacobs IT Solutions | Remote IT Support for Small Business</title>
+  <title>Jacobs IT Solutions | IT Automation & Reporting Tools</title>
 
   <meta
     name="description"
-    content="Jacobs IT Solutions provides professional remote IT support, Microsoft 365 administration, Windows Server support, Active Directory, Entra ID, email troubleshooting, and PowerShell automation for small businesses."
+    content="Self-service IT automation software from Jacobs IT Solutions. Explore planned Windows and Active Directory reporting, server health checks, certificate monitoring, and automated security assessments."
   >
 
   <meta name="theme-color" content="#07111f">
@@ -900,839 +900,80 @@ nav a:hover {
         padding: 25px 20px;
       }
     }
+
+    section[id] { scroll-margin-top: 140px; }
+    :focus-visible { outline: 3px solid #60a5fa; outline-offset: 5px; }
+    .skip-link { position:absolute; top:-100px; left:20px; z-index:2000; background:white; padding:12px; }
+    .skip-link:focus { top:12px; }
+    .status { display:inline-block; background:#eaf3ff; color:#18549b; font-size:12px; font-weight:800; padding:4px 10px; border-radius:6px; margin-bottom:16px; }
+    .product-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+    .product-card { display:flex; flex-direction:column; }
+    .product-card h3 { font-size:23px; }
+    .product-card p { font-size:16px; }
+    .product-card ul { margin:18px 0 22px; padding-left:20px; color:#637083; font-size:14px; }
+    .product-card a { margin-top:auto; color:#18549b; font-weight:750; text-underline-offset:4px; }
+    .roadmap-note { padding:20px 24px; border-left:3px solid #1677ff; background:#f6f9fc; margin-bottom:26px; }
+    details { border-bottom:1px solid #e4eaf1; padding:22px 0; }
+    summary { cursor:pointer; font-weight:750; font-size:18px; }
+    details p { color:#637083; margin-top:12px; max-width:850px; }
+    .hero-panel .panel-title { color:#9dccff; font-size:12px; text-transform:uppercase; letter-spacing:1.6px; }
+    .panel-row { justify-content:space-between; }
+    .panel-row span:last-child { color:#9dccff; font-size:12px; white-space:nowrap; }
+    @media(max-width:1100px) { .nav-wrap { gap:16px; } nav a { padding:9px; } .hero-grid { gap:35px; } }
+    @media(max-width:730px) { .product-grid { grid-template-columns:1fr; } section[id] {scroll-margin-top:95px;} .nav-wrap {gap:10px;} nav {padding:4px;} .nav-cta {padding:9px 12px !important;} }
+    @media(prefers-reduced-motion:reduce) { html {scroll-behavior:auto;} * {transition:none !important;} }
   </style>
 </head>
 
 <body>
-
-<header>
-  <div class="container nav-wrap">
-
-   <a class="brand" href="#">
-  <img src="animated-logo-1.gif" alt="Jacobs IT Solutions" class="site-logo">
-</a>
-
-    <nav>
-      <a href="#services">Services</a>
-      <a href="#technologies">Technologies</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#about">About</a>
-      <a href="#support">Contact</a>
-      <a class="nav-cta" href="#support">Request Support</a>
-    </nav>
-
-  </div>
-</header>
-
-<main>
-
-  <!-- HERO -->
-
-  <section class="hero">
-    <div class="container hero-grid">
-
-      <div>
-        <div class="eyebrow">
-          <span class="eyebrow-dot"></span>
-          Remote IT Support for Small Business
-        </div>
-
-        <h1>
-          Professional IT support.
-          <span class="hero-highlight">Without the IT department.</span>
-        </h1>
-
-        <p class="hero-copy">
-          Practical remote technology support for businesses that need
-          knowledgeable help with Microsoft 365, Windows, servers, identity,
-          email, security, and automation.
-        </p>
-
-        <div class="hero-actions">
-          <a class="button primary" href="#support">Get IT Help</a>
-          <a class="button secondary" href="#services">Explore Services</a>
-        </div>
-
-        <div class="hero-tags">
-          <span>Remote First</span>
-          <span>Fixed-Price Options</span>
-          <span>No Long-Term Contract Required</span>
-        </div>
-      </div>
-
-      <div class="hero-panel">
-        <div class="panel-title">Common problems we solve</div>
-
-        <div class="panel-row">
-          <div class="check">✓</div>
-          Microsoft 365 & email issues
-        </div>
-
-        <div class="panel-row">
-          <div class="check">✓</div>
-          Windows & user support
-        </div>
-
-        <div class="panel-row">
-          <div class="check">✓</div>
-          Active Directory & Entra ID
-        </div>
-
-        <div class="panel-row">
-          <div class="check">✓</div>
-          Windows Server troubleshooting
-        </div>
-
-        <div class="panel-row">
-          <div class="check">✓</div>
-          PowerShell & IT automation
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- SERVICES -->
-
-  <section id="services">
-    <div class="container">
-
-      <div class="section-head">
-        <div class="section-label">Services</div>
-
-        <h2>Business IT help without unnecessary complexity.</h2>
-
-        <p>
-          Choose the technical service you need instead of committing to an
-          expensive managed-services agreement.
-        </p>
-      </div>
-
-      <div class="service-grid">
-
-        <div class="service-card">
-          <div class="icon-box">PC</div>
-
-          <h3>Remote IT Support</h3>
-
-          <p>
-            Windows troubleshooting, software problems, user issues,
-            configuration assistance, and remote technical support.
-          </p>
-        </div>
-
-        <div class="service-card">
-          <div class="icon-box">365</div>
-
-          <h3>Microsoft 365</h3>
-
-          <p>
-            Microsoft 365 administration, Exchange Online, licensing,
-            mailboxes, MFA, user accounts, and security configuration.
-          </p>
-        </div>
-
-        <div class="service-card">
-          <div class="icon-box">AD</div>
-
-          <h3>Server & Identity</h3>
-
-          <p>
-            Windows Server, Active Directory, Group Policy, Microsoft Entra ID,
-            permissions, authentication, and account troubleshooting.
-          </p>
-        </div>
-
-        <div class="service-card">
-          <div class="icon-box">&gt;_</div>
-
-          <h3>Automation</h3>
-
-          <p>
-            PowerShell scripts and workflow automation that reduce repetitive
-            administrative work and improve consistency.
-          </p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- TECHNOLOGIES & PLATFORMS -->
-
-  <section id="technologies" class="technology-section">
-    <div class="container">
-
-      <div class="section-heading">
-        <span class="eyebrow">Technologies & Platforms</span>
-
-        <h2>Experience with the technology your business depends on.</h2>
-
-        <p>
-          From everyday Microsoft 365 administration to servers, identity,
-          virtualization and automation, Jacobs IT Solutions can help manage
-          and troubleshoot the systems behind your business.
-        </p>
-      </div>
-
-      <div class="technology-grid">
-
-        <!-- Microsoft 365 -->
-
-        <div class="technology-card">
-          <div class="technology-icon">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <rect x="3" y="3" width="7" height="7"></rect>
-              <rect x="14" y="3" width="7" height="7"></rect>
-              <rect x="3" y="14" width="7" height="7"></rect>
-              <rect x="14" y="14" width="7" height="7"></rect>
-            </svg>
-          </div>
-
-          <h3>Microsoft 365</h3>
-
-          <p>
-            Exchange Online, user administration, licensing, shared mailboxes,
-            MFA, email troubleshooting and tenant configuration.
-          </p>
-        </div>
-
-        <!-- Active Directory -->
-
-        <div class="technology-card">
-          <div class="technology-icon">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <rect x="9" y="3" width="6" height="5" rx="1"></rect>
-              <rect x="3" y="16" width="6" height="5" rx="1"></rect>
-              <rect x="15" y="16" width="6" height="5" rx="1"></rect>
-              <path d="M12 8v4"></path>
-              <path d="M6 12h12"></path>
-              <path d="M6 12v4"></path>
-              <path d="M18 12v4"></path>
-            </svg>
-          </div>
-
-          <h3>Active Directory</h3>
-
-          <p>
-            Users, groups, permissions, Group Policy, authentication,
-            account troubleshooting and directory administration.
-          </p>
-        </div>
-
-        <!-- Entra ID -->
-
-        <div class="technology-card">
-          <div class="technology-icon">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M12 3l7 3v5c0 4.6-2.7 8.1-7 10-4.3-1.9-7-5.4-7-10V6z"></path>
-              <circle cx="12" cy="10" r="2.4"></circle>
-              <path d="M8.5 16c.9-2 2-3 3.5-3s2.6 1 3.5 3"></path>
-            </svg>
-          </div>
-
-          <h3>Microsoft Entra ID</h3>
-
-          <p>
-            Identity management, MFA, access troubleshooting, enterprise
-            applications, account administration and hybrid identity.
-          </p>
-        </div>
-
-        <!-- Windows Server -->
-
-        <div class="technology-card">
-          <div class="technology-icon">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <rect x="4" y="3" width="16" height="5" rx="1"></rect>
-              <rect x="4" y="10" width="16" height="5" rx="1"></rect>
-              <rect x="4" y="17" width="16" height="4" rx="1"></rect>
-              <path d="M7 5.5h.01"></path>
-              <path d="M7 12.5h.01"></path>
-              <path d="M7 19h.01"></path>
-            </svg>
-          </div>
-
-          <h3>Windows Server</h3>
-
-          <p>
-            Server administration, Windows services, updates, permissions,
-            troubleshooting and infrastructure support.
-          </p>
-        </div>
-
-        <!-- PowerShell -->
-
-        <div class="technology-card">
-          <div class="technology-icon">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <rect x="3" y="4" width="18" height="16" rx="2"></rect>
-              <path d="M7 9l4 3-4 3"></path>
-              <path d="M13 15h4"></path>
-            </svg>
-          </div>
-
-          <h3>PowerShell</h3>
-
-          <p>
-            Scripting, repetitive task automation, reporting, account
-            management and custom workflow automation.
-          </p>
-        </div>
-
-        <!-- VMware -->
-
-        <div class="technology-card">
-          <div class="technology-icon">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <rect x="3" y="7" width="9" height="9" rx="2"></rect>
-              <rect x="12" y="8" width="9" height="9" rx="2"></rect>
-              <path d="M8 7V5a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v3"></path>
-            </svg>
-          </div>
-
-          <h3>VMware</h3>
-
-          <p>
-            Virtual machine administration, vSphere, configuration,
-            troubleshooting and virtual infrastructure support.
-          </p>
-        </div>
-
-        <!-- DNS -->
-
-        <div class="technology-card">
-          <div class="technology-icon">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <circle cx="12" cy="12" r="9"></circle>
-              <path d="M3 12h18"></path>
-              <path d="M12 3c2.5 2.5 4 5.5 4 9s-1.5 6.5-4 9"></path>
-              <path d="M12 3c-2.5 2.5-4 5.5-4 9s1.5 6.5 4 9"></path>
-            </svg>
-          </div>
-
-          <h3>DNS & Domains</h3>
-
-          <p>
-            DNS records, domain configuration, email-related DNS,
-            troubleshooting and service connectivity.
-          </p>
-        </div>
-
-        <!-- Security -->
-
-        <div class="technology-card">
-          <div class="technology-icon">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M12 3l7 3v5c0 4.6-2.7 8.1-7 10-4.3-1.9-7-5.4-7-10V6z"></path>
-              <rect x="9" y="10" width="6" height="5" rx="1"></rect>
-              <path d="M10.5 10V8.5a1.5 1.5 0 0 1 3 0V10"></path>
-            </svg>
-          </div>
-
-          <h3>Security & Access</h3>
-
-          <p>
-            MFA, account security, permissions, access reviews, endpoint
-            troubleshooting and practical security configuration.
-          </p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- A DIFFERENT APPROACH -->
-
-  <section class="difference" id="approach">
-    <div class="container">
-
-      <div class="difference-heading">
-        <span class="eyebrow">A Different Approach</span>
-
-        <h2>IT help without hiring an IT department.</h2>
-
-        <p>
-          Get experienced technical help when you need it—without adding a
-          full-time employee or committing to a traditional managed-services
-          contract.
-        </p>
-      </div>
-
-      <div class="difference-grid">
-
-        <div class="difference-card">
-          <div class="difference-number">01</div>
-
-          <h3>Pay for the work you need</h3>
-
-          <p>
-            Get help with an individual problem, recurring support or a larger
-            project without being forced into a long-term contract.
-          </p>
-        </div>
-
-        <div class="difference-card">
-          <div class="difference-number">02</div>
-
-          <h3>Work directly with your IT professional</h3>
-
-          <p>
-            No call-center handoffs or explaining the same problem to multiple
-            technicians. Work directly with the person solving the problem.
-          </p>
-        </div>
-
-        <div class="difference-card">
-          <div class="difference-number">03</div>
-
-          <h3>Remote support keeps things simple</h3>
-
-          <p>
-            Many Microsoft 365, Windows, server, identity and administrative
-            issues can be diagnosed and resolved remotely.
-          </p>
-        </div>
-
-        <div class="difference-card">
-          <div class="difference-number">04</div>
-
-          <h3>Solutions that fit the business</h3>
-
-          <p>
-            The goal isn't to sell more technology. It's to solve the problem,
-            simplify the environment and leave things working better than before.
-          </p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- PRICING -->
-
-<section id="pricing">
-  <div class="container">
-
-    <div class="center-head">
-      <div class="section-label">Popular Services</div>
-
-      <h2>Simple fixed-price remote IT support.</h2>
-
-      <p>
-        Straightforward pricing for common small-business IT tasks.
-        Larger or more complex issues can be quoted separately.
-      </p>
-    </div>
-
-    <div class="pricing-box">
-
-      <div class="price-row">
-        <div>
-          <div class="price-name">Remote PC Troubleshooting</div>
-          <div class="price-detail">
-            Diagnosis and repair of one Windows computer issue, up to approximately 45 minutes.
-          </div>
-        </div>
-
-        <div class="price">$59</div>
-      </div>
-
-      <div class="price-row">
-        <div>
-          <div class="price-name">Outlook / Business Email Troubleshooting</div>
-          <div class="price-detail">
-            Outlook setup, send/receive issues, profile problems, and account connection troubleshooting.
-          </div>
-        </div>
-
-        <div class="price">$59</div>
-      </div>
-
-      <div class="price-row">
-        <div>
-          <div class="price-name">Microsoft 365 User Setup</div>
-          <div class="price-detail">
-            Create one user, assign licensing, configure the mailbox, and perform basic MFA setup.
-          </div>
-        </div>
-
-        <div class="price">$49</div>
-      </div>
-
-      <div class="price-row">
-        <div>
-          <div class="price-name">Employee Offboarding</div>
-          <div class="price-detail">
-            Block sign-in, revoke sessions, secure account access, handle mailbox access, and clean up licensing.
-          </div>
-        </div>
-
-        <div class="price">$69</div>
-      </div>
-
-      <div class="price-row">
-        <div>
-          <div class="price-name">MFA Setup / Troubleshooting</div>
-          <div class="price-detail">
-            Configure or troubleshoot Microsoft 365 multi-factor authentication for one user.
-          </div>
-        </div>
-
-        <div class="price">$49</div>
-      </div>
-
-      <div class="price-row">
-        <div>
-          <div class="price-name">Shared Mailbox Setup</div>
-          <div class="price-detail">
-            Create one shared mailbox, configure permissions, and verify user access.
-          </div>
-        </div>
-
-        <div class="price">$59</div>
-      </div>
-
-    </div>
-
-    <div class="pricing-note">
-      Fixed pricing covers the service described and one specific issue or request.
-      If additional work is discovered, the scope and price will be confirmed before proceeding.
-      Windows Server, Active Directory, Entra ID, VMware, DNS, automation, and larger projects are available by quote.
-    </div>
-
-  </div>
-</section>
-
-  <!-- HOW IT WORKS -->
-
-  <section class="process">
-    <div class="container">
-
-      <div class="center-head">
-        <div class="section-label">How it works</div>
-
-        <h2>Simple support from request to resolution.</h2>
-
-        <p>
-          Getting professional IT help shouldn't require a complicated sales process.
-        </p>
-      </div>
-
-      <div class="steps">
-
-        <div class="step">
-          <div class="step-num">STEP 01</div>
-
-          <h3>Tell us what you need.</h3>
-
-          <p>
-            Submit the support request form with a description of your issue or project.
-          </p>
-        </div>
-
-        <div class="step">
-          <div class="step-num">STEP 02</div>
-
-          <h3>Review the scope.</h3>
-
-          <p>
-            We'll review the request and confirm whether it can be handled remotely,
-            along with expected pricing.
-          </p>
-        </div>
-
-        <div class="step">
-          <div class="step-num">STEP 03</div>
-
-          <h3>Get it resolved.</h3>
-
-          <p>
-            Remote access is securely coordinated when necessary and the requested
-            work is completed.
-          </p>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-
-  <section id="about">
-    <div class="container about-grid">
-
-      <div>
-        <div class="section-label">About Jacobs IT Solutions</div>
-
-        <div class="section-head" style="margin-bottom:0;">
-          <h2>Enterprise IT experience made accessible to small businesses.</h2>
-
-          <p>
-            Jacobs IT Solutions provides remote technology services backed by
-            years of professional systems administration experience.
-          </p>
-
-          <p style="margin-top:18px;">
-            The focus is practical: solve the technical problem, improve the
-            environment, document the work, and help businesses get back to
-            what they do best.
-          </p>
-        </div>
-      </div>
-
-      <div class="about-card">
-        <div class="tagline">People • Technology • Progress</div>
-
-        <h3>Technology should help your business move forward.</h3>
-
-        <p>
-          From Microsoft 365 and Windows Server to identity management and
-          automation, Jacobs IT Solutions helps businesses solve technical
-          challenges without unnecessary complexity.
-        </p>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- SUPPORT REQUEST FORM -->
-
-  <section id="support" class="support-section">
-    <div class="container support-grid">
-
-      <div class="support-info">
-        <div class="section-label">Request Support</div>
-
-        <h2>Tell us what you need help with.</h2>
-
-        <p>
-          Complete the form and provide as much information as possible.
-          Your request will be reviewed and we'll follow up regarding scope,
-          pricing, and next steps.
-        </p>
-
-        <div class="support-contact">
-          Prefer email?<br>
-
-          <a href="mailto:tim@jacobsitsolutions.com">
-            tim@jacobsitsolutions.com
-          </a>
-        </div>
-      </div>
-
-      <form
-        id="support-form"
-        class="support-form"
-        action="https://formspree.io/f/xeaojbye"
-        method="POST"
-      >
-
-        <input
-          type="hidden"
-          name="_subject"
-          value="New Jacobs IT Solutions Support Request"
-        >
-
-        <div class="form-row">
-
-          <div class="form-group">
-            <label for="name">Name *</label>
-
-            <input
-              type="text"
-              id="name"
-              name="name"
-              required
-              autocomplete="name"
-            >
-          </div>
-
-          <div class="form-group">
-            <label for="company">Company</label>
-
-            <input
-              type="text"
-              id="company"
-              name="company"
-              autocomplete="organization"
-            >
-          </div>
-
-        </div>
-
-        <div class="form-row">
-
-          <div class="form-group">
-            <label for="email">Email *</label>
-
-            <input
-              type="email"
-              id="email"
-              name="email"
-              required
-              autocomplete="email"
-            >
-          </div>
-
-          <div class="form-group">
-            <label for="phone">Phone</label>
-
-            <input
-              type="tel"
-              id="phone"
-              name="phone"
-              autocomplete="tel"
-            >
-          </div>
-
-        </div>
-
-        <div class="form-row">
-
-          <div class="form-group">
-            <label for="service">Service Needed *</label>
-
-           <select id="service" name="service" required>
-  <option value="">Select a service</option>
-  <option>Remote PC Troubleshooting - $59</option>
-  <option>Outlook / Business Email Troubleshooting - $59</option>
-  <option>Microsoft 365 User Setup - $49</option>
-  <option>Employee Offboarding - $69</option>
-  <option>MFA Setup / Troubleshooting - $49</option>
-  <option>Shared Mailbox Setup - $59</option>
-  <option>Request a Quote / Other IT Service</option>
-</select>
-          </div>
-
-          <div class="form-group">
-            <label for="priority">Priority *</label>
-
-            <select id="priority" name="priority" required>
-              <option value="">Select priority</option>
-              <option>Normal - General request</option>
-              <option>High - Work is significantly impacted</option>
-              <option>Urgent - Business operations are stopped</option>
-            </select>
-          </div>
-
-        </div>
-
-        <div class="form-group">
-          <label for="message">Describe the issue or request *</label>
-
-          <textarea
-            id="message"
-            name="message"
-            required
-            placeholder="Please describe what is happening, any error messages you are receiving, affected users or systems, and anything you have already tried."
-          ></textarea>
-        </div>
-
-        <div class="form-note">
-          For your security, do not include passwords, MFA codes, private keys,
-          credit card information, or other sensitive credentials in this form.
-          Secure access can be coordinated separately if needed.
-        </div>
-
-        <button class="submit-button" type="submit">
-          Submit Support Request
-        </button>
-
-        <div
-          id="form-status"
-          style="
-            display:none;
-            margin-top:15px;
-            font-size:13px;
-            text-align:center;
-          "
-        ></div>
-
-      </form>
-
-    </div>
-  </section>
-
-</main>
-
-<footer>
-  <div class="container footer-grid">
-
-    <div>
-      <div class="footer-name">Jacobs IT Solutions</div>
-      <div class="footer-tag">PEOPLE • TECHNOLOGY • PROGRESS</div>
-    </div>
-
-    <div class="footer-right">
-      <div>Pacolet, South Carolina</div>
-      <div>© 2026 Jacobs IT Solutions. All rights reserved.</div>
-    </div>
-
-  </div>
-</footer>
-
-<script>
-  const supportForm = document.getElementById("support-form");
-  const formStatus = document.getElementById("form-status");
-  const submitButton = supportForm.querySelector(".submit-button");
-
-  supportForm.addEventListener("submit", async function(event) {
-    event.preventDefault();
-
-    const formData = new FormData(supportForm);
-
-    submitButton.disabled = true;
-    submitButton.textContent = "Submitting...";
-
-    formStatus.style.display = "block";
-    formStatus.style.color = "#637083";
-    formStatus.textContent = "Sending your request...";
-
-    try {
-      const response = await fetch(
-        supportForm.action,
-        {
-          method: supportForm.method,
-          body: formData,
-          headers: {
-            "Accept": "application/json"
-          }
-        }
-      );
-
-      if (response.ok) {
-        window.location.href = "thank-you.html";
-      } else {
-        const data = await response.json();
-
-        let errorMessage =
-          "There was a problem submitting your request. Please try again.";
-
-        if (data.errors) {
-          errorMessage = data.errors
-            .map(error => error.message)
-            .join(", ");
-        }
-
-        formStatus.style.color = "#b91c1c";
-        formStatus.textContent = errorMessage;
-
-        submitButton.disabled = false;
-        submitButton.textContent = "Submit Support Request";
-      }
-
-    } catch (error) {
-      formStatus.style.color = "#b91c1c";
-      formStatus.textContent =
-        "Unable to submit the request. Please check your connection and try again.";
-
-      submitButton.disabled = false;
-      submitButton.textContent = "Submit Support Request";
-    }
-  });
-</script>
-
-</body>
-</html>
+<a class="skip-link" href="#main">Skip to content</a>
+<header><div class="container nav-wrap">
+<a class="brand" href="#top" aria-label="Jacobs IT Solutions home"><img src="animated-logo-1.gif" alt="Jacobs IT Solutions" class="site-logo"></a>
+<nav aria-label="Main navigation"><a href="#tools">Tools</a><a href="#approach">Our approach</a><a href="#roadmap">Roadmap</a><a href="#about">About</a><a class="nav-cta" href="#tools">Explore tools</a></nav>
+</div></header>
+<main id="main">
+<section class="hero" id="top"><div class="container hero-grid"><div>
+<div class="eyebrow">IT software &amp; automation</div>
+<h1>Less repetition.<br><span class="hero-highlight">More control.</span></h1>
+<p class="hero-copy">Practical, self-service tools for the people who run IT. Jacobs IT Solutions is building automation and reporting software for Windows, Active Directory, and the systems you depend on.</p>
+<div class="hero-actions"><a class="button primary" href="#tools">Explore planned tools</a><a class="button secondary" href="#roadmap">View the roadmap</a></div>
+<div class="hero-tags"><span>PowerShell automation</span><span>Windows &amp; Active Directory</span><span>Clear reporting</span></div>
+</div><aside class="hero-panel" aria-label="Planned tool areas"><div class="panel-title">What we're building toward</div>
+<div class="panel-row"><span>Directory reporting</span><span>Coming soon</span></div>
+<div class="panel-row"><span>Server health checks</span><span>Coming soon</span></div>
+<div class="panel-row"><span>Certificate monitoring</span><span>Coming soon</span></div>
+<div class="panel-row"><span>Security assessments</span><span>Future roadmap</span></div>
+<p style="color:#c3cfdd;font-size:13px;margin-top:22px">Tools are planned and not yet available for purchase or download.</p>
+</aside></div></section>
+<section id="tools"><div class="container"><div class="section-head"><div class="section-label">Planned tool collection</div><h2>Focused tools for everyday IT work.</h2><p>Start with a specific task. Get a useful report. Spend less time repeating the same checks. These are our planned product areas; final features, requirements, and pricing will be published when tools are ready.</p></div>
+<div class="service-grid product-grid">
+<article class="service-card product-card"><div class="icon-box" aria-hidden="true">AD</div><div><span class="status">Coming soon · Planned</span></div><h3>Windows &amp; Active Directory reporting</h3><p>Planned reporting tools to make directory and Windows inventory easier to review.</p><ul><li>Stale user and computer account reports</li><li>Group membership and account status visibility</li><li>Repeatable inventory and reporting workflows</li></ul><a href="#roadmap">View availability details →</a></article>
+<article class="service-card product-card"><div class="icon-box" aria-hidden="true">&gt;_</div><div><span class="status">Coming soon · Planned</span></div><h3>Server health checks</h3><p>Planned checks that bring routine Windows Server observations into one clear report.</p><ul><li>Disk capacity and service status checks</li><li>Review of common health indicators</li><li>Repeatable checks for routine administration</li></ul><a href="#roadmap">View availability details →</a></article>
+<article class="service-card product-card"><div class="icon-box" aria-hidden="true">TLS</div><div><span class="status">Coming soon · Planned</span></div><h3>Certificate monitoring</h3><p>Planned certificate checks to help administrators see expiration dates before renewals become urgent.</p><ul><li>Certificate inventory and expiration reporting</li><li>Visibility into upcoming renewal windows</li><li>Repeatable checks for configured endpoints</li></ul><a href="#roadmap">View availability details →</a></article>
+<article class="service-card product-card"><div class="icon-box" aria-hidden="true">01</div><div><span class="status">Future roadmap · Exploring</span></div><h3>Automated security assessments</h3><p>A future direction for automated reviews of identity and system configurations.</p><ul><li>Potential Active Directory security reviews</li><li>Potential Microsoft 365 and Entra ID assessments</li><li>Findings that help prioritize administrator review</li></ul><a href="#roadmap">Explore the future roadmap →</a></article>
+</div></div></section>
+<section id="approach" class="difference"><div class="container"><div class="difference-heading"><div class="section-label">Designed for independent admins</div><h2>Software you can use on your terms.</h2><p>Our direction is self-service IT software: focused automation, understandable reports, and clear documentation.</p></div><div class="difference-grid">
+<div class="difference-card"><div class="difference-number">01 / AUTOMATE</div><h3>Make repetitive work repeatable.</h3><p>Our planned tools focus on routine checks and reporting tasks that administrators perform again and again.</p></div>
+<div class="difference-card"><div class="difference-number">02 / UNDERSTAND</div><h3>Know what a tool does.</h3><p>Each release is intended to include documentation covering setup, permissions, scope, and how to interpret its results.</p></div>
+<div class="difference-card"><div class="difference-number">03 / STAY IN CONTROL</div><h3>Work in your own environment.</h3><p>We aim to make tool use self-service, with requirements and data handling explained before you run anything.</p></div>
+<div class="difference-card"><div class="difference-number">04 / KEEP IT FOCUSED</div><h3>Choose the task you need.</h3><p>Browse by use case and review a tool's details when it launches. Product questions and feedback can be handled by email.</p></div>
+</div></div></section>
+<section id="roadmap"><div class="container"><div class="section-head"><div class="section-label">Availability &amp; roadmap</div><h2>A clear direction. An honest launch status.</h2><p>We're moving Jacobs IT Solutions toward IT automation software. There are no released tools listed here yet.</p></div>
+<div class="roadmap-note"><strong>Coming soon does not mean available today.</strong><p>Launch dates, final features, supported environments, licensing, and pricing have not been announced. Downloads and purchase options will appear only after a tool is released.</p></div>
+<div class="pricing-box"><div class="price-row"><div><div class="price-name">Initial focus</div><div class="price-detail">Windows and Active Directory reporting, server health checks, and certificate monitoring.</div></div><div class="price">Planned</div></div><div class="price-row"><div><div class="price-name">Future direction</div><div class="price-detail">Automated security assessments for identity and system configurations.</div></div><div class="price">Exploring</div></div></div>
+</div></section>
+<section class="process"><div class="container"><div class="center-head"><div class="section-label">The self-service experience</div><h2>How we intend released tools to work.</h2><p>This is the planned experience for future releases.</p></div><div class="steps">
+<div class="step"><div class="step-num">STEP 01</div><h3>Choose a tool.</h3><p>Review its purpose, supported environments, requirements, and licensing before deciding whether it fits your task.</p></div>
+<div class="step"><div class="step-num">STEP 02</div><h3>Follow the documentation.</h3><p>Use the setup and permissions guidance to configure the tool in an environment you administer.</p></div>
+<div class="step"><div class="step-num">STEP 03</div><h3>Review the results.</h3><p>Use the report to understand your environment and decide what needs attention next.</p></div>
+</div></div></section>
+<section id="about"><div class="container about-grid"><div><div class="section-label">About Jacobs IT Solutions</div><div class="section-head" style="margin-bottom:0"><h2>Systems administration experience, turned into practical software.</h2><p>Jacobs IT Solutions is an IT software and automation business based in Pacolet, South Carolina, drawing on professional systems administration experience.</p><p style="margin-top:18px">Our focus is building useful tools for IT administrators: automate recurring work, improve visibility, and make results easier to understand.</p></div></div><div class="about-card"><div class="tagline">People · Technology · Progress</div><h3>Build once. Make everyday IT work easier.</h3><p>Windows, Active Directory, PowerShell, and identity systems inform our product direction. The goal is a documented, self-service collection of tools that administrators can use independently.</p></div></div></section>
+<section id="questions" class="support-section"><div class="container"><div class="section-head"><div class="section-label">Common questions</div><h2>Before you get started.</h2></div>
+<details><summary>Can I download or buy a tool today?</summary><p>No. The tool areas shown here are planned. This page will link to released tools when downloads, documentation, and any applicable pricing are available.</p></details>
+<details><summary>Do I need to schedule a call?</summary><p>Our planned products are intended for self-service use. You can explore the roadmap here and send product questions or feature suggestions by email.</p></details>
+<details><summary>Do you provide managed IT or emergency support?</summary><p>Jacobs IT Solutions is focused on software and automation. This site does not offer managed IT contracts, phone support, or emergency troubleshooting services.</p></details>
+<details><summary>Will the tools change my environment?</summary><p>Permissions, data handling, and any changes a tool can make will be documented for each release. Review those details before running a tool.</p></details>
+<div class="support-contact" style="margin-top:35px"><strong>Have a product question or feature idea?</strong><p>Email <a href="mailto:tim@jacobsitsolutions.com">tim@jacobsitsolutions.com</a>. Please keep messages free of credentials and sensitive environment data.</p></div>
+</div></section>
+</main><footer><div class="container footer-grid"><div><div class="footer-name">Jacobs IT Solutions</div><div class="footer-tag">PEOPLE · TECHNOLOGY · PROGRESS</div></div><div class="footer-right"><div>IT software &amp; automation · Pacolet, South Carolina</div><div>© 2026 Jacobs IT Solutions. All rights reserved.</div></div></div></footer>
+</body></html>
