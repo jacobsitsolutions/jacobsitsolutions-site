@@ -1,0 +1,102 @@
+{
+  "Metadata": {
+    "SchemaVersion": 1,
+    "ToolVersion": "0.1.0",
+    "Mode": "Demo",
+    "Status": "Complete",
+    "StartedUtc": "2026-10-13T16:59:50.0000000Z",
+    "CompletedUtc": "2026-10-13T17:00:00.0000000Z",
+    "DomainName": "demo.example",
+    "DomainSid": "S-1-5-21-111111111-222222222-333333333",
+    "ForestRootDomain": "demo.example",
+    "Server": "dc01.demo.example (synthetic)",
+    "SearchBase": "DC=demo,DC=example",
+    "InactiveDays": 90,
+    "RequestedGraceDays": 14,
+    "EffectiveGraceDays": 14,
+    "TimestampSyncDays": 14,
+    "TimestampSignalAvailable": true,
+    "CandidateCutoffUtc": "2026-07-01T17:00:00.0000000Z",
+    "Queries": [
+      {
+        "Query": "Get-ADDomain (synthetic)",
+        "Status": "Collected",
+        "Count": 1
+      },
+      {
+        "Query": "Get-ADForest (synthetic)",
+        "Status": "Collected",
+        "Count": 1
+      },
+      {
+        "Query": "Domain timestamp interval (synthetic)",
+        "Status": "Collected",
+        "Count": 1
+      },
+      {
+        "Query": "Get-ADUser (synthetic)",
+        "Status": "Collected",
+        "Count": 8
+      },
+      {
+        "Query": "Get-ADGroup (synthetic)",
+        "Status": "Collected",
+        "Count": 13
+      }
+    ],
+    "Scope": "One domain; AD user objects and group membership relationships only. Not effective authorization, a forest audit, or historical evidence."
+  },
+  "FileHashes": [
+    {
+      "File": "accounts.csv",
+      "Bytes": 4206,
+      "SHA256": "8A24EAD79746205C9627C1D2216F9AE0DAC6FAF4BBE05CB852768BCAAE3AC13B"
+    },
+    {
+      "File": "collection-issues.csv",
+      "Bytes": 39,
+      "SHA256": "7C33D723245FBEA8C4284DB5E979E0C522D8EC080469744F32C00D78767AE761"
+    },
+    {
+      "File": "inactivity-candidates.csv",
+      "Bytes": 1893,
+      "SHA256": "1906CB3E1C0F82C7AFD0AA8E0C32160BBD51F5FBDE66F4FD7AFA41E6BF28806B"
+    },
+    {
+      "File": "memberships.csv",
+      "Bytes": 3385,
+      "SHA256": "1FF00E997583334356DC1BDDCAA8EA1A540D31D84D490F587624764AAD31345B"
+    },
+    {
+      "File": "privileged-memberships.csv",
+      "Bytes": 781,
+      "SHA256": "45BF55E119BE6EE3CF321D2A7309F57304068D242E868E73F70CA411E046B055"
+    },
+    {
+      "File": "report.html",
+      "Bytes": 11225,
+      "SHA256": "46396DC93C455CF2A36E364F6E1CAEB5535A48CF877252605FF18106AD56F454"
+    },
+    {
+      "File": "reviewer-worksheet.csv",
+      "Bytes": 1640,
+      "SHA256": "01A632BADC20ED4B92D86BE40310FAB469E8159FEC70FAAFD8F9521AE43968A9"
+    },
+    {
+      "File": "selected-groups.csv",
+      "Bytes": 1063,
+      "SHA256": "517DCEDEC94596BCA503FA10079D8CD72191FA4F86748801028D8DA43B4BACE4"
+    },
+    {
+      "File": "snapshot.json",
+      "Bytes": 23177,
+      "SHA256": "940137817341F8C2E25003B117DEA832D0C5E6321D0CDBF24A01A43BB4E3162A"
+    },
+    {
+      "File": "unexpanded-members.csv",
+      "Bytes": 43,
+      "SHA256": "B1B91C5C3A976DA2EABD716EC5B355155D306A64A047152944C645F6FC0C94B2"
+    }
+  ],
+  "Notes": "Hashes detect changes relative to this manifest; the manifest is not digitally signed. Keep original evidence separate from the completed worksheet. CSV formula-like text is prefixed with an apostrophe; snapshot.json retains original values. Website preview adds a return link; hashes reflect the preview files. Synthetic evidence only."
+}

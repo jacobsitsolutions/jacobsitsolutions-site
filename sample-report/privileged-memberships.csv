@@ -1,0 +1,3 @@
+"UserSID","SamAccountName","GroupSID","GroupName","GroupDN","MembershipKind","Depth","SecurityOnlyPath","SelectedPrivilegedGroup","OneObservedPath"
+"S-1-5-21-111111111-222222222-333333333-1200","alex.admin","S-1-5-21-111111111-222222222-333333333-512","Domain Admins","CN=Domain Admins,CN=Users,DC=demo,DC=example","Nested","1","True","True","CN=Alex Rivera,CN=Users,DC=demo,DC=example -> CN=Tier Zero Operators,CN=Users,DC=demo,DC=example -> CN=Domain Admins,CN=Users,DC=demo,DC=example"
+"S-1-5-21-111111111-222222222-333333333-1206","primary.admin","S-1-5-21-111111111-222222222-333333333-512","Domain Admins","CN=Domain Admins,CN=Users,DC=demo,DC=example","Primary","0","True","True","CN=Sam Ellis,CN=Users,DC=demo,DC=example -> CN=Domain Admins,CN=Users,DC=demo,DC=example"
