@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "SchemaVersion": 1,
-    "ToolVersion": "0.1.0",
+    "ToolVersion": "0.2.0",
     "Mode": "Demo",
     "Status": "Complete",
     "StartedUtc": "2026-10-13T16:59:50.0000000Z",
@@ -74,8 +74,8 @@
     },
     {
       "File": "report.html",
-      "Bytes": 11225,
-      "SHA256": "46396DC93C455CF2A36E364F6E1CAEB5535A48CF877252605FF18106AD56F454"
+      "Bytes": 11137,
+      "SHA256": "220757783E4F02646BCCDA64E879E653FFC66BE7BB8FB090FBD7227231E754D2"
     },
     {
       "File": "reviewer-worksheet.csv",
@@ -90,7 +90,7 @@
     {
       "File": "snapshot.json",
       "Bytes": 23177,
-      "SHA256": "940137817341F8C2E25003B117DEA832D0C5E6321D0CDBF24A01A43BB4E3162A"
+      "SHA256": "77205228C10DA0170E2B682C58C4F7A07132592C7B9ECF67F784A5D5CB779CD0"
     },
     {
       "File": "unexpanded-members.csv",
@@ -98,5 +98,5 @@
       "SHA256": "B1B91C5C3A976DA2EABD716EC5B355155D306A64A047152944C645F6FC0C94B2"
     }
   ],
-  "Notes": "Hashes detect changes relative to this manifest; the manifest is not digitally signed. Keep original evidence separate from the completed worksheet. CSV formula-like text is prefixed with an apostrophe; snapshot.json retains original values. Website preview adds a return link; hashes reflect the preview files. Synthetic evidence only."
+  "Notes": "Hashes detect changes relative to this manifest; the manifest is not digitally signed. Keep original evidence separate from the completed worksheet. CSV formula-like text is prefixed with an apostrophe; snapshot.json retains original values."
 }
