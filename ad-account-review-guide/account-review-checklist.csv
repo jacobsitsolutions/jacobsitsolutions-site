@@ -1,0 +1,13 @@
+Step,ReviewTask,Owner,Status,EvidenceReference,Notes
+1,Record domain account population groups collection time and purpose,,,,
+2,Assign review owner reviewers and due date,,,,
+3,Confirm authorization read access and evidence handling,,,,
+4,Collect and preserve original scoped account and group evidence,,,,
+5,Inspect collection errors exclusions and unresolved references,,,,
+6,Review activity indicators with account and business context,,,,
+7,Check relevant group relationships and documented privilege-scope limits,,,,
+8,Record owner reviewer decision reason date and approval reference,,,,
+9,Route separately approved changes through the normal change process,,,,
+10,Verify completed changes and retain the change evidence,,,,
+11,Preserve final decisions approvals original evidence and known gaps,,,,
+12,Set the next review date under organizational requirements,,,,
