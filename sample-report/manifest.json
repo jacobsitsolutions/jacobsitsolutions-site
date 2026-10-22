@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "SchemaVersion": 1,
-    "ToolVersion": "0.2.0",
+    "ToolVersion": "0.2.1",
     "Mode": "Demo",
     "Status": "Complete",
     "StartedUtc": "2026-10-13T16:59:50.0000000Z",
@@ -74,8 +74,8 @@
     },
     {
       "File": "report.html",
-      "Bytes": 11137,
-      "SHA256": "220757783E4F02646BCCDA64E879E653FFC66BE7BB8FB090FBD7227231E754D2"
+      "Bytes": 11616,
+      "SHA256": "D5A1A6F0B52840D1165AF60CB86AF9BFA99720FB9D5DCCDAF3CF3BDBBCED2F09"
     },
     {
       "File": "reviewer-worksheet.csv",
@@ -90,7 +90,7 @@
     {
       "File": "snapshot.json",
       "Bytes": 23177,
-      "SHA256": "77205228C10DA0170E2B682C58C4F7A07132592C7B9ECF67F784A5D5CB779CD0"
+      "SHA256": "258F0D99A9ECFDF600E8FB1ABCCDEF4D2E5BFF4C2528C0ABA5F0703702EC3394"
     },
     {
       "File": "unexpanded-members.csv",
