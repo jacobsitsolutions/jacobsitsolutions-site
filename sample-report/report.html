@@ -24,6 +24,17 @@ body:not(:has(:target)) .report-nav a[href="#overview"],body:has(#overview:targe
 .linked-table th{white-space:nowrap;overflow-wrap:normal}.linked-table a{font-weight:600}.detail-hint{color:#52657b}.record-detail{display:none}.record-detail:target{display:block}.detail-back{display:inline-block;margin-bottom:12px;font-weight:650}.detail-coverage{background:#edf4fc;padding:14px;border-radius:8px}.record-detail dl{grid-template-columns:230px 1fr}.record-detail h3{margin-top:26px}.record-detail[id]{scroll-margin-top:100px}@media(max-width:900px){.record-detail[id]{scroll-margin-top:150px}}@media(max-width:650px){.record-detail dl{grid-template-columns:1fr}.record-detail[id]{scroll-margin-top:16px}}
 
 .structured-data{max-height:70vh;overflow:auto;background:#f4f7fb;border:1px solid #dae3ee;border-radius:8px;padding:16px;font:13px/1.55 Consolas,monospace;white-space:pre-wrap;overflow-wrap:anywhere}.report-views{margin:16px 0}.evidence-view h2{overflow-wrap:anywhere}
+
+/* Centered summary cards: preserve the original labels, counts and links. */
+.stats{gap:16px;align-items:stretch}
+.stat{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;min-height:184px;padding:24px 18px;text-align:center;background:linear-gradient(180deg,#ffffff 0%,#f9fbff 100%);border:1px solid #d4e0ef;border-top:3px solid #8bb6ec;border-radius:16px;box-shadow:0 3px 12px #142d4e08;transition:background-color .15s,border-color .15s,box-shadow .15s,transform .15s}
+.stat strong{font-size:42px;font-weight:750;line-height:1.05;letter-spacing:-.025em;font-variant-numeric:tabular-nums;color:#1857a8}
+.stat span{display:flex;align-items:center;justify-content:center;min-height:4.2em;max-width:24ch;font-size:14px;font-weight:600;line-height:1.4;color:#334963;overflow-wrap:anywhere}
+.stat:hover{background:#edf5ff;border-color:#78a9e2;box-shadow:0 7px 18px #1857a814;transform:translateY(-2px)}.stat:hover span{text-decoration:underline;text-underline-offset:4px}
+.stat:focus-visible{border-color:#1857a8;box-shadow:0 0 0 4px #1857a81a;outline-offset:3px}
+@media(max-width:650px){.stats{gap:12px}.stat{min-height:164px;padding:20px 14px;gap:10px}.stat strong{font-size:34px}.stat span{font-size:13px}}
+@media(prefers-reduced-motion:reduce){.stat{transition:none}.stat:hover{transform:none}}
+@media print{.stat{min-height:0;background:white;border-top-width:1px;box-shadow:none;padding:12px}.stat strong{font-size:30px}.stat span{min-height:0;font-size:12px}}
 </style></head><body><header><div class="wrap"><div class="brand">JACOBS IT SOLUTIONS / ACCESS REVIEW</div><h1>Active Directory access review</h1><p>demo.example · Snapshot completed <time datetime="2026-10-13T17:00:00.0000000Z">10/13/2026 17:00 UTC</time></p><div class="mode">SYNTHETIC DEMO - NOT REAL DIRECTORY EVIDENCE</div></div></header><main>
 <nav class="report-nav" aria-label="Report sections"><a href="#overview">Overview</a><a href="#scope">Coverage</a><a href="#privileged">Administrative membership</a><a href="#accounts">Accounts</a><a href="#issues">Scan issues</a><a href="#review">Review workflow</a></nav>
 <div class="notice" id="overview"><strong>Collection status: Complete</strong><br>Collected counts describe returned objects only. Complete means the requested queries and modeled relationships completed within the stated scope; it does not mean the domain is secure, all privileges were found, or an audit requirement is satisfied. Partial or Failed requires reviewing the issues below.</div>
